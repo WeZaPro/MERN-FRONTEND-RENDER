@@ -3,7 +3,7 @@ axios.defaults.withCredentials = true;
 
 export const register = async (value) => {
   try {
-    await axios.post(process.env.REACT_APP_API + "/signup", value);
+    await axios.post(process.env.REACT_APP_API + "/api/signup", value);
     //await axios.post("http://localhost:5000/api/signup", value);
     alert("Create User : Success");
     return true;
